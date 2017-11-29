@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dropDaBit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <select id="drumkitselector" class="drumkit" onchange="changeDrumKit(this)">
+            <option data-color="#006BA6" data-bg="img/hiphop_bg.jpg" data-font="Georgia" value="1">Hip-Hop</option> 
+            <option data-color="#EF2D56" data-bg="img/rock_bg.jpg" data-font="sans-serif" value="2">Rock</option>
+            <option data-color="#09814A" data-bg="img/house_bg.jpg" data-font="Monaco" value="3">House</opstion>  
+        </select>
+    </div>
+    <div class="keys">
+        <div data-key="65" class="key">
+            <span class="keypress">A</span>
+            <span class="sound">Kick</span>
+        </div>
+        <div data-key="83" class="key">
+            <span class="keypress">S</span>
+            <span class="sound">Clap</span>
+        </div>
+        <div data-key="68" class="key">
+            <span class="keypress">D</span>
+            <span class="sound">Snare</span>
+        </div>
+        <div data-key="70" class="key">
+            <span class="keypress">F</span>
+            <span class="sound">Hi-hat</span>
+        </div>
+    </div>
+    <audio data-key="65" data-drum="kick" src=""></audio>
+    <audio data-key="83" data-drum="clap" src=""></audio>
+    <audio data-key="68" data-drum="snare" src=""></audio>
+    <audio data-key="70" data-drum="hihat" src=""></audio>
+    <script src="app.js"></script>
+</body>
+
+</html>
